@@ -364,10 +364,20 @@ main {
 hr {
     border-top: 1px solid #3a3a3a;
 }
+/*Gallery Page*/
+#photos img {
+    width: 100%;
+    line-height: 1em;
+}
 
+#photos {
+    line-height: 0;
+
+}
 /*Footer*/
 footer {
     background-color: #83205e72;
+
 
 }
 
