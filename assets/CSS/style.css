@@ -329,14 +329,54 @@ main {
 
 }
 
+/*Meet-up Time Section*/
+#times {
+    background: url(../images/canary.jpg) no-repeat center/cover;
+    /*Handles responsiveness without the need for media query*/
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#times div {
+    color: #fafafa;
+    background-color: rgb(0, 0, 0, .6);
+    padding: 15px;
+    text-align: center;
+    /*Will not wrap on screens less than 400px wide.
+    Each div will expand to fill available space on its row*/
+    flex-basis: 200px;
+    flex-grow: 1;
+    /*Creates a div of meetup time divs over the background image*/
+    border: 2px solid white;
+}
+
+#times h3 {
+    /*Override heading color set in general styles*/
+    color: #fafafa;
+}
+    
+
+
+hr {
+    border-top: 1px solid #3a3a3a;
+}
+
+/*Footer*/
+footer {
+    background-color: #83205e72;
+
+}
+
+
 @media screen and (min-width: 1200px) {
+
     /*Reasons section*/
     #benefits {
         display: flex;
         flex-direction: row;
     }
 
-    #benefits > div {
+    #benefits>div {
         flex: 1;
     }
 
@@ -348,24 +388,12 @@ main {
         order: 1;
     }
 
-    #benefits-mental > div {
+    #benefits-mental>div {
         align-self: flex-start;
     }
 
-    #benefits-physical > div {
+    #benefits-physical>div {
         align-self: flex-end;
     }
-    
-} 
-    
-
-
-hr {
-    border-top: 1px solid #3a3a3a;
-}
-
-/*Footer*/
-footer {
-    background-color: #83205e72;
 
 }
