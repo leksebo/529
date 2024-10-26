@@ -203,6 +203,14 @@ header a {
     border-bottom: 1px solid #3a3a3a;
 }
 
+
+/*Media query: tablets and larger (768px and up)*/
+@media screen and (min-width: 768px) ()
+
+
+
+
+
 /*Navbar styles with dropdown toggle*/
 nav {
     position: absolute;
@@ -238,6 +246,25 @@ main {
     background: url(../images/backgroundlp.jpeg) no-repeat center center/cover;
     position: relative;
 }    
+
+/*Reasons section*/
+#benefits-physical,
+#benfits-mental {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+#benefits-physical > div,
+#benfits-mental > div {
+    width: 75%;
+
+}
+
+#benfits-mental > div {
+    text-align: end;
+    align-self: flex-end;
+}
 
 #cover-text {
 /*Final rgba value sets the pacity so it is semi transparent*/
@@ -299,14 +326,44 @@ main {
     display: flex;
     align-items: center;
     justify-content: center;
-    
+
 }
+
+@media screen and (min-width: 1200px) {
+    /*Reasons section*/
+    #benefits {
+        display: flex;
+        flex-direction: row;
+    }
+
+    #benefits > div {
+        flex: 1;
+    }
+
+    #benefits-image {
+        order: 0;
+    }
+
+    #benefits-mental {
+        order: 1;
+    }
+
+    #benefits-mental > div {
+        align-self: flex-start;
+    }
+
+    #benefits-physical > div {
+        align-self: flex-end;
+    }
+    
+} 
+    
 
 
 hr {
     border-top: 1px solid #3a3a3a;
 }
-}
+
 /*Footer*/
 footer {
     background-color: #83205e72;
